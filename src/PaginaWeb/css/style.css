@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #202020;
+    background-image: url(./img/background.svg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    color: #9d0000;
+    background-color: rgba(32,32,32,0.7);
+    border-bottom: 4px solid #9d0000;
+    min-width: 820px;
+}
+
+.logo {
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navlinks li a {
+    padding-left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.login {
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #9d0000;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: #3d3d3d;
+}
+
+/* Daqui pra baixo estilo do form */
+
+.container-cad {
+    background-color: #737373;
+    background-image: url(./img/Ashelol.png);
+    background-size: cover;
+    background-position: -160px ;
+    justify-content: center;
+    margin: 0;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%; /*Usar no máximo todos os 600 pixels */
+    height: 555px;
+    transform: translate(50%, 20vh);
+    box-shadow: 5px 5px 5px #9d0000;
+}
+
+.header {
+    background-color: rgba(0,0,0,0.4);
+    border-top: 4px solid #9d0000;
+    border-radius: 10px 10px 0px 0px;
+    padding: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.form {
+    padding: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.form-content {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.form-content label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.form-content input {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    border: 2px solid white;
+}
+
+.form-content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.btn-cad {
+    background-color: #9d0000;
+    color: aliceblue;
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        width: 60%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+
+/* DAQUI PRA BAIXO ESTILO DO LOGIN */
+
+.container-log {
+    background-color: rgba(0,0,0,0.4);
+    background-image: url(./img/witcherlog.jpg);
+    background-size: 860px;
+    background-position: -160px ;
+    margin: 0;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%; /*Usar no máximo todos os 600 pixels */
+    height: 390px;
+    transform: translate(50%, 20vh);
+    box-shadow: 5px 5px 5px #9d0000;
+}
+
+.btn-login {
+    background-color: #9d0000;
+    color: aliceblue;
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+
