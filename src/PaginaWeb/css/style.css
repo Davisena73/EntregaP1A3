@@ -2,17 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     width: 100%;
     height: 100vh;
+    font-family: 'Open Sans', sans-serif;
     background-color: #202020;
-    background-image: url(./img/background.svg);
+    background-image: url(./imgcadlog/background.svg);
     background-size: cover;
     justify-content: center;
     align-items: center;
+    /* display: flex; */
 }
 
 nav {
@@ -55,27 +56,30 @@ nav {
     background-color: #9d0000;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
+    transition: .3s;
 }
 
 .login:hover {
-    background-color: #3d3d3d;
+    background-color: #202020;
 }
 
 /* Daqui pra baixo estilo do form */
 
 .container-cad {
-    background-color: #737373;
-    background-image: url(./img/Ashelol.png);
+    background-color: #202020;
+    background-image: url(./imgcadlog/Ashelol.png);
     background-size: cover;
-    background-position: -160px ;
+    background-position: center ;
     justify-content: center;
-    margin: 0;
+    margin: auto;
     border-radius: 10px;
     max-width: 700px;
     width: 100%; /*Usar no máximo todos os 600 pixels */
-    height: 555px;
-    transform: translate(50%, 20vh);
+    height: 619px;
+    max-height: 100%;
+    /* transform: translate(50%, 20vh); */
     box-shadow: 5px 5px 5px #9d0000;
+    overflow: auto;
 }
 
 .header {
@@ -91,12 +95,15 @@ nav {
     padding: 18px;
     text-align: center;
     color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-content {
     margin-bottom: 8px;
     padding-bottom: 18px;
-    position: relative;
+    /* position: relative; */
+    font-weight: bold;
 }
 
 .form-content label {
@@ -110,13 +117,31 @@ nav {
     border-radius: 5px;
     padding: 8px;
     border: 2px solid white;
+    outline: none;
+    transition: .3s;
+}
+
+#date {
+    width: 25%;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+    margin-left: 10px;
+    
 }
 
 .form-content a{
-    position: absolute;
+    /* position: absolute; */
     bottom: -8px;
     left: 0;
     visibility: hidden;
+}
+
+.box-select {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    text-align: justify;
 }
 
 .btn-cad {
@@ -128,16 +153,26 @@ nav {
     border: 0;
     font-size: 16px;
     cursor: pointer;
-    text-align: center;
     margin-top: 20px;
+    margin-left: 100px;
+    transition: .3s;
 }
 
-@media screen and (max-width: 1000px) {
-    .container{
-        width: 60%;
-    }
-    .form{
-        width: 100%;
+button[type="submit"]:hover {
+    background-color: #202020;
+}
+
+.span-required {
+    display: none;
+}
+
+.inputs:focus {
+    border-color: #9d0000;
+}
+
+@media screen and (max-width: 579px) {
+    .box-select {
+        flex-direction: column;
     }
 }
 
@@ -145,16 +180,19 @@ nav {
 
 .container-log {
     background-color: rgba(0,0,0,0.4);
-    background-image: url(./img/witcherlog.jpg);
-    background-size: 860px;
-    background-position: -160px ;
-    margin: 0;
+    background-image: url(./imgcadlog/witcherlog.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 200px;
     border-radius: 10px;
     max-width: 700px;
     width: 100%; /*Usar no máximo todos os 600 pixels */
-    height: 390px;
-    transform: translate(50%, 20vh);
+    height: 405px;
+    /* transform: translate(50%, 20vh); */
     box-shadow: 5px 5px 5px #9d0000;
+    overflow: auto;
 }
 
 .btn-login {
@@ -166,9 +204,15 @@ nav {
     border: 0;
     font-size: 16px;
     cursor: pointer;
-    text-align: center;
     margin-top: 20px;
-    
+    margin-left: 100px;
+    transition: .10s;   
+}
+
+.cadastrar {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold
 }
 
 
